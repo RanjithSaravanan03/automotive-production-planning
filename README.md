@@ -4,6 +4,8 @@ A Python and SQLite planning system that simulates **28,000 vehicle orders over 
 
 **Method:** deterministic earliest-due-date feasible heuristic. The implementation does not contain a mathematical optimization model or a cost optimizer.
 
+**[▶ Open Interactive Dashboard](https://ranjithsaravanan03.github.io/automotive-production-planning/)**
+
 ![Expedited scenario dashboard](docs/assets/expedited-dashboard.png)
 
 ## Business problem
