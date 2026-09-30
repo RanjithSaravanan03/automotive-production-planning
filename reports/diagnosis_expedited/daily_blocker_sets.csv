@@ -1,0 +1,17 @@
+period,exact_blocker_set,orders
+64,material:zp7:BEV,415
+65,capacity:zp7->zp8,218
+65,capacity:zp7->zp8; material:zp7:BEV,197
+66,capacity:zp7->zp8,415
+67,capacity:zp7->zp8,129
+67,capacity:zp7->zp8; material:zp7:BEV,286
+68,capacity:zp7->zp8,70
+68,capacity:zp7->zp8; material:zp7:BEV,345
+69,material:zp7:BEV,620
+70,material:zp7:BEV,802
+71,capacity:zp7->zp8,226
+71,capacity:zp7->zp8; material:zp7:BEV,576
+72,capacity:zp7->zp8,80
+72,capacity:zp7->zp8; material:zp7:BEV,722
+73,material:zp7:BEV,1079
+74,material:zp7:BEV,1130

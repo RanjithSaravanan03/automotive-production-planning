@@ -1,0 +1,9 @@
+STEP 6C - BUFFER SUPPLIER POLICY CHECK
+POLICY | PRODUCED | UNFULFILLED | ON TIME | ON-TIME % | BACKLOG UNIT-DAYS | CHECKS
+demand_driven_within_capacity | 28000 | 0 | 28000 | 100.0 | 0 | PASS
+no_unscheduled_production | 28000 | 0 | 28000 | 100.0 | 0 | PASS
+
+Identical tested metrics: True
+Full on-time fulfilment under both policies: True
+Extra stock and expedited transport are hypothetical; costs and pre-horizon availability are not established.
+Saved: reports/buffer_supplier_policy_check/

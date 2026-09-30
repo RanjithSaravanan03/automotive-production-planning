@@ -1,0 +1,9 @@
+{
+  "changed_route": "battery-supplier_trans -> battery-supplier_prod",
+  "baseline_transit_days": 20,
+  "scenario_transit_days": 16,
+  "shipment_quantities": "unchanged",
+  "shipment_departure_periods": "unchanged",
+  "production_and_assembly_capacities": "unchanged",
+  "planning_policy": "same as baseline"
+}

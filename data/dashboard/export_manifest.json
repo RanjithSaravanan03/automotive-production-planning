@@ -1,0 +1,46 @@
+{
+  "export_checks": "PASS",
+  "scenario_count": 3,
+  "table_row_counts": {
+    "scenarios.csv": 3,
+    "kpi_summary.csv": 3,
+    "daily_performance.csv": 42,
+    "capacity_utilization.csv": 462,
+    "inventory_positions.csv": 5376,
+    "order_outcomes.csv": 80
+  },
+  "input_sha256": {
+    "baseline_14day/summary.json": "1eabb71fc2625455532131fafb5ed488e932cc8a612c679f1aeffcf490566909",
+    "baseline_14day/policy_used.json": "9bb4d1975e48f7ea5c1f28d52f455734db27041e14cb112c4b21f65572b21294",
+    "baseline_14day/daily_summary.csv": "4f0f08e289dec49a1b4036c30029f77f7ace51a8b766673647d8ffb56a36c466",
+    "baseline_14day/capacity_ledger.csv": "33909c7d4aa909f34fd699be45a3e4a38b6b7389daab1214f5e126b6cb3b069c",
+    "baseline_14day/inventory_ledger.csv": "cb5fa0aecb1bed53fc39666cd7cb9d02f036466fbc886ddc6d16c77b4d6d0f85",
+    "baseline_14day/order_results.csv": "1849f637e4ce769cb5c767f5513613a50dd65eee9fa87cf3fb759bdcffd22ddd",
+    "scenario_battery_expedited/summary.json": "359923f07ddcecfa110e971621acee34cc676940f7fc6f01acb5a7fe28e2c478",
+    "scenario_battery_expedited/policy_used.json": "9bb4d1975e48f7ea5c1f28d52f455734db27041e14cb112c4b21f65572b21294",
+    "scenario_battery_expedited/scenario_assumptions.json": "1cd298ec3a7e37fedc0ba33ac696bee6b8ca7cbb289843ebe4dbcb04ac0595fd",
+    "scenario_battery_expedited/daily_summary.csv": "9b710d271c53c84ccf4721de97e4d23eca88079fa2027d3d172f982213a67111",
+    "scenario_battery_expedited/capacity_ledger.csv": "ca5eabeedb96f2e07600c7e15abe2a6daf420decb6bf75b4be19265639c1ea79",
+    "scenario_battery_expedited/inventory_ledger.csv": "e48ed80d3ad69337b70caa06a48a891b99994d7d6cf1a57013352a6feea3ae6b",
+    "scenario_battery_expedited/order_results.csv": "bcde6eec611954df705856e51db40591b67db74562d7499b818c5f4383768d83",
+    "buffer_1130_demand_driven_within_capacity/summary.json": "1ad07a428c094235a95fa1315cccee9acfa56aadf69f3f1123c841f3d8d27496",
+    "buffer_1130_demand_driven_within_capacity/policy_used.json": "4530138acde523372a46a4f5a44e33d9907186b2733479bfdb0a3fb56a4b1ba3",
+    "buffer_1130_demand_driven_within_capacity/scenario_assumptions.json": "579864e0760832c8629e032705dc947d9c9ec0e398114ea353eb96c9e91f76cf",
+    "buffer_1130_demand_driven_within_capacity/daily_summary.csv": "6b3999c45b6214b31f1be340570922e6ac4b5890000ab1bfaef6a4a067c9385d",
+    "buffer_1130_demand_driven_within_capacity/capacity_ledger.csv": "8ecd732548ead07558fd4f93b27afbbcd633c3b3262ddbc7709bbabc6f0a32db",
+    "buffer_1130_demand_driven_within_capacity/inventory_ledger.csv": "0b63c23e70bb941ef61e532eedbc63889a9d2d876246fd38e6fb101f105dc64e",
+    "buffer_1130_demand_driven_within_capacity/order_results.csv": "7c3bb64143fcdd0feb61e80b5f5d13884a0a7554f7422c81735d6961fed03c21"
+  },
+  "dashboard_rules": [
+    "Filter by one scenario for KPI cards; compare scenarios by label.",
+    "Join each fact table to scenarios.csv on scenario_id with one-to-many relationships.",
+    "Never sum demand or completed units across alternative scenarios.",
+    "Inventory and backlog are snapshots: use the selected day, not a sum over days.",
+    "Sum daily closing backlog only for the specifically labelled backlog unit-days metric.",
+    "Compute utilization as SUM(used_units)/SUM(capacity_units); use a consistent route and unit.",
+    "on_time_pct uses all demand as denominator; on_time_improvement_pp is percentage points.",
+    "order_outcomes is aggregated: sum order_units, do not count its rows.",
+    "Order blockers are last-observed checks, not independent root-cause attribution.",
+    "Keep the hypothetical scenario notes visible; no economic or actual service claim."
+  ]
+}

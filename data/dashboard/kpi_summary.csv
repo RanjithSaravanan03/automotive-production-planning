@@ -1,0 +1,4 @@
+﻿scenario_id,demand_units,produced_units,unfulfilled_units,on_time_units,late_completed_units,horizon_fulfilment_pct,on_time_pct,backlog_unit_days,feasibility_checks,assembly_capacity_units,assembly_utilization_pct,additional_completed_vs_baseline,additional_on_time_vs_baseline,on_time_improvement_pp_vs_baseline,backlog_unit_days_reduction_vs_baseline
+baseline,28000,26448,1552,24194,2254,94.46,86.41,12794,PASS,28000,94.46,0,0,0.0,0
+expedited,28000,26870,1130,24819,2051,95.96,88.64,7310,PASS,28000,95.96,422,625,2.23,5484
+buffer,28000,28000,0,28000,0,100.0,100.0,0,PASS,28000,100.0,1552,3806,13.59,12794

@@ -1,0 +1,35 @@
+{
+  "source_workbook": "2020_dataset_OfAutomotiveProductionNetwork.xlsb",
+  "source_workbook_bytes": 1055138,
+  "source_workbook_sha256": "1ea0bcdea3225d308be913c9ca0f377585e1863847c78d6e8eec10b6de82889e",
+  "source_dataset_doi": "10.17632/pr3sdy5vp3.1",
+  "extraction": "LibreOffice temporary XLSX conversion followed by openpyxl values-only CSV extraction; original workbook unchanged",
+  "source_csv_sha256": {
+    "BOM.csv": "77c09642cef9c9b0fb1bdb535e1f105b82d119ddd5bc2504d990aea4fcc7ace3",
+    "arcs.csv": "ca1d0f4011a7a9d5fd342bbc8c00ee0b3b21ff6d63b97ce7337e7da56777ae66",
+    "capacity_at_arc.csv": "aa6c3983f09c3d76e625e9fbd2ad7c7d28e5a0e14dc4d7ba53f474ea74b9482d",
+    "demands.csv": "6e9d6995a7cda4e97c81e929bedaf17e8bff44c59987e8f92d518fa64c88f9ea",
+    "initial_flows.csv": "5dd9cb76ceef7897d525d4e4652cc81d9430a0a0f4ee6e32821b2ea134974077",
+    "initial_inventories.csv": "e1ec4d3e30cd61df7429f772b941322b9b6ec7e4bdb6b2cba5236ce77541e797",
+    "max_flow_group_per_arc.csv": "a918f452ea1d1ea0a8e766f7e4fe816e3f1cf34ef2a72702b0eaa8faa62ae73d",
+    "max_flow_product_per_arc.csv": "9423e9330fb59933da24bc61dbe7b96f0f90b2421758c381ba19f75a8fee5980",
+    "nodes.csv": "d0e51c5ea6b58357ae940b0f52e9d9855b9ec137cd9398a22f505fb4e31e4033",
+    "nodes_inflow.csv": "4ac9f6df28097c465f2b4f94f3f467efe3ca23681c03231844d706c55d62df3a",
+    "operations.csv": "05708fda5d9469c791253045fe5b33ff593d49dab9409d7f26f6f4652ceedf80",
+    "products.csv": "dd31ac6d9ccd4a2f77fedc2ed6a68388ca02d07528adaf60aa1db6eacf564a0e"
+  },
+  "audited_source_row_counts": {
+    "products": 28049,
+    "nodes": 12,
+    "nodes_inflow": 44,
+    "arcs": 11,
+    "capacity_at_arc": 154,
+    "max_flow_product_per_arc": 365,
+    "max_flow_group_per_arc": 20,
+    "operations": 15,
+    "BOM": 87059,
+    "demands": 28000,
+    "initial_inventories": 82,
+    "initial_flows": 117
+  }
+}

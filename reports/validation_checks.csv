@@ -1,0 +1,50 @@
+check,status,detail
+products.unique_keys,PASS,28049 records
+products.complete_nonnegative,PASS,"missing=0, negative=0"
+products.references,PASS,unknown references=0
+nodes.unique_keys,PASS,12 records
+nodes.complete_nonnegative,PASS,"missing=0, negative=0"
+nodes.references,PASS,unknown references=0
+nodes_inflow.unique_keys,PASS,44 records
+nodes_inflow.complete_nonnegative,PASS,"missing=0, negative=0"
+nodes_inflow.references,PASS,unknown references=0
+arcs.unique_keys,PASS,11 records
+arcs.complete_nonnegative,PASS,"missing=0, negative=0"
+arcs.references,PASS,unknown references=0
+capacity_at_arc.unique_keys,PASS,154 records
+capacity_at_arc.complete_nonnegative,PASS,"missing=0, negative=0"
+capacity_at_arc.references,PASS,unknown references=0
+max_flow_product_per_arc.unique_keys,PASS,365 records
+max_flow_product_per_arc.complete_nonnegative,PASS,"missing=0, negative=0"
+max_flow_product_per_arc.references,PASS,unknown references=0
+max_flow_group_per_arc.unique_keys,PASS,20 records
+max_flow_group_per_arc.complete_nonnegative,PASS,"missing=0, negative=0"
+max_flow_group_per_arc.references,PASS,unknown references=0
+operations.unique_keys,PASS,15 records
+operations.complete_nonnegative,PASS,"missing=0, negative=0"
+operations.references,PASS,unknown references=0
+BOM.unique_keys,PASS,87059 records
+BOM.complete_nonnegative,PASS,"missing=0, negative=0"
+BOM.references,PASS,unknown references=0
+demands.unique_keys,PASS,28000 records
+demands.complete_nonnegative,PASS,"missing=0, negative=0"
+demands.references,PASS,unknown references=0
+initial_inventories.unique_keys,PASS,82 records
+initial_inventories.complete_nonnegative,PASS,"missing=0, negative=0"
+initial_inventories.references,PASS,unknown references=0
+initial_flows.unique_keys,PASS,117 records
+initial_flows.complete_nonnegative,PASS,"missing=0, negative=0"
+initial_flows.references,PASS,unknown references=0
+capacity.complete_grid,PASS,154 actual vs 154 expected
+demand.within_horizon,PASS,all demand periods in horizon
+opening_inventory.period,PASS,opening period 60
+opening_inventory.bounds,PASS,listed stock records within bounds
+initial_flow.before_horizon,PASS,past flow starts precede planning
+bom.positive_quantities,PASS,positive component quantities
+bom.physical_acyclic,PASS,identity rows excluded only for physical explosion
+demand.has_physical_bom,PASS,all demanded car IDs have components
+flows.group_matches_arc,PASS,flow products match arc groups
+source.rows_match_audited_workbook,PASS,All 12 worksheet row counts reconciled
+aggregation.demand_and_components_conserved,PASS,Exact day-level demand and component reconciliation
+configuration_hashes.unique,PASS,104
+sqlite.foreign_keys_and_integrity,PASS,All declared references valid; integrity_check=ok

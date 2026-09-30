@@ -1,0 +1,25 @@
+{
+  "stage": "data_foundation_only",
+  "solver_ready": false,
+  "source_worksheets": 12,
+  "source_rows": 143928,
+  "total_demand_units": 28000,
+  "configurations": 104,
+  "configuration_due_groups": 1286,
+  "physical_bom_rows": 87010,
+  "identity_bom_rows": 49,
+  "initial_arrival_status_counts": {
+    "within_horizon": 106,
+    "after_horizon": 11
+  },
+  "checks_passed": 49,
+  "checks_failed": 0,
+  "warnings": [
+    "Supplier schedule equality vs upper-bound treatment remains unresolved.",
+    "Missing supplier schedule entries are not imputed.",
+    "Financial costs absent.",
+    "Inventory limits are uniform 99999 and safety stock is zero.",
+    "Direct component demand is not a netted or lead-time-offset supply plan.",
+    "No optimization or baseline results yet."
+  ]
+}

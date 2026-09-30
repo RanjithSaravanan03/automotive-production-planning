@@ -1,0 +1,12 @@
+STEP 6B - FINISHED BATTERY BUFFER SENSITIVITY
+All cases use 16-day component transit and unchanged capacities.
+Extra finished BEV batteries are available at zp7 BEFORE Day 61.
+EXTRA BATTERIES | PRODUCED | UNFULFILLED | ON TIME | ON-TIME % | BACKLOG UNIT-DAYS | CHECKS
+0 | 26870 | 1130 | 24819 | 88.64 | 7310 | PASS
+424 | 27294 | 706 | 26566 | 94.88 | 2691 | PASS
+1130 | 28000 | 0 | 28000 | 100.0 | 0 | PASS
+
+Zero-buffer control matches the saved expedited metrics.
+PASS covers in-horizon simulation checks; it does not validate procurement or pre-horizon buffer availability.
+Saved: reports/battery_buffer_sensitivity/comparison.csv
+Detailed ledgers: reports/scenario_battery_buffer_0, _424 and _1130/

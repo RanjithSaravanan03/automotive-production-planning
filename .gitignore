@@ -1,0 +1,13 @@
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.env
+.env.*
+.DS_Store
+Thumbs.db
+*.sqlite-journal
+*.sqlite-wal
+*.sqlite-shm
+release/

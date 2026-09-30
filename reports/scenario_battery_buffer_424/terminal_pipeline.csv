@@ -1,0 +1,12 @@
+arrival_period,from_node,to_node,product_id,quantity,start_period,origin
+76,battery-supplier_trans,battery-supplier_prod,componment_battery1,4240,60,existing
+76,battery-supplier_trans,battery-supplier_prod,componment_battery2,2544,60,existing
+76,battery-supplier_trans,battery-supplier_prod,componment_battery3,1696,60,existing
+76,seat-supplier_trans,seat-supplier_prod,componment_seat1,5563,53,existing
+76,seat-supplier_trans,seat-supplier_prod,componment_seat2,5199,53,existing
+76,seat-supplier_trans,seat-supplier_prod,componment_seat3,1924,53,existing
+76,seat-supplier_trans,seat-supplier_prod,componment_seat4,1314,53,existing
+83,seat-supplier_trans,seat-supplier_prod,componment_seat1,5515,60,existing
+83,seat-supplier_trans,seat-supplier_prod,componment_seat2,5253,60,existing
+83,seat-supplier_trans,seat-supplier_prod,componment_seat3,1917,60,existing
+83,seat-supplier_trans,seat-supplier_prod,componment_seat4,1315,60,existing

@@ -1,0 +1,22 @@
+{
+  "method": "earliest_due_date_feasible_heuristic",
+  "policy_name": "baseline_v1_fixed_then_flexible",
+  "post_day_70_policy": "demand_driven_within_capacity",
+  "demand_units": 28000,
+  "produced_units": 26448,
+  "unfulfilled_units": 1552,
+  "on_time_units": 24194,
+  "late_completed_units": 2254,
+  "horizon_fulfilment_pct": 94.46,
+  "on_time_pct": 86.41,
+  "backlog_unit_days": 12794,
+  "feasibility_checks": "PASS",
+  "policy_sha256": "b9bf40a05f171033d34d4be7ec1d8ebabf9fc9184ed6cfeb176c2db07005b73f",
+  "limitations": [
+    "Greedy horizon-net replenishment may hold inventory early or postpone useful replenishment when later pipeline exists.",
+    "External input is available on demand only at listed engine/gear source pairs; processing capacity remains binding.",
+    "No new 20/23-day upstream departure can support this horizon; existing in-transit shipments retained.",
+    "Seats are produced just in time. Missing stock defaults to zero.",
+    "These are simulated operational results; no cost savings, actual delivery or optimality claim."
+  ]
+}

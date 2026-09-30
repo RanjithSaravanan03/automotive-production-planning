@@ -1,0 +1,5 @@
+{
+  "battery_component_transit_days": 16,
+  "post_day_70_policy": "no_unscheduled_production",
+  "expedited_transport": "Hypothetical; availability and cost not established."
+}

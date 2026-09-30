@@ -1,0 +1,26 @@
+{
+  "method": "earliest_due_date_feasible_heuristic",
+  "policy_name": "baseline_v1_fixed_then_flexible",
+  "post_day_70_policy": "no_unscheduled_production",
+  "demand_units": 28000,
+  "produced_units": 28000,
+  "unfulfilled_units": 0,
+  "on_time_units": 28000,
+  "late_completed_units": 0,
+  "horizon_fulfilment_pct": 100.0,
+  "on_time_pct": 100.0,
+  "backlog_unit_days": 0,
+  "feasibility_checks": "PASS",
+  "policy_sha256": "5577545454d4ed6665a3d327ee1db5f6ada8c436fb65439061486206ae13206c",
+  "limitations": [
+    "Greedy horizon-net replenishment may hold inventory early or postpone useful replenishment when later pipeline exists.",
+    "External input is available on demand only at listed engine/gear source pairs; processing capacity remains binding.",
+    "Seats are produced just in time. Missing stock defaults to zero.",
+    "These are simulated operational results; no cost savings, actual delivery or optimality claim.",
+    "Hypothetical component transit of 16 days, applied to existing shipments; no new upstream departures.",
+    "Hypothetical extra 1130 finished BEV batteries at zp7 before Day 61 (opening total 1182).",
+    "Extra-stock source, pre-horizon capacity, procurement, carrying cost and expedited service availability are not established.",
+    "A deterministic scenario sensitivity, not an economic safety-stock or cost-optimal recommendation."
+  ],
+  "scenario_name": "buffer_1130_no_unscheduled_production"
+}

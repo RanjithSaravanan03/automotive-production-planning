@@ -1,0 +1,16 @@
+node_id,input_group,output_group,input_quantity,output_quantity,alpha,beta
+zp7,engine,car,1,1,0,1
+zp7,gear,car,1,1,0,1
+zp7,battery,car,1,1,0,1
+zp7,seat,car,1,1,0,1
+zp8,car,car,1,1,0,0
+engine-supplier_inv,engine,engine,1,1,0,1
+gear-supplier_inv,gear,gear,1,1,0,1
+battery-supplier_inv,battery,battery,1,1,0,1
+seat-supplier_inv,seat,seat,1,1,0,1
+engine-supplier_prod,engine,engine,1,1,0,1
+gear-supplier_prod,gear,gear,1,1,0,1
+seat-supplier_prod,seat_component,seat,1,1,0,1
+battery-supplier_prod,battery_component,battery,20,1,0,1
+seat-supplier_trans,seat_component,seat_component,1,1,0,1
+battery-supplier_trans,battery_component,battery_component,1,1,0,1

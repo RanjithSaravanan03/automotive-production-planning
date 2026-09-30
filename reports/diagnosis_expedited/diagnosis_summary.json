@@ -1,0 +1,31 @@
+{
+  "audit_checks": "PASS",
+  "report_source": "reports/scenario_battery_expedited",
+  "battery_demand": 3003,
+  "opening_finished_batteries": 52,
+  "existing_finished_batteries": 359,
+  "opening_component_battery_equivalents": 93,
+  "usable_component_battery_equivalents": 1462,
+  "battery_supply_quantity_bound": 1873,
+  "batteries_consumed": 1873,
+  "battery_quantity_shortfall": 1130,
+  "optimistic_car_quantity_bound": 26870,
+  "actual_completed_cars": 26870,
+  "quantity_bound_attained": true,
+  "final_unfulfilled_orders": 1130,
+  "final_unfulfilled_bev_orders": 1130,
+  "unused_assembly_slots_total": 1130,
+  "limitations": [
+    "Day-end blocker counts may overlap and test orders individually without reserving resources.",
+    "The quantity bound applies only to unchanged opening stock, shipments, lead times and order BOM.",
+    "Attaining this bound establishes horizon volume only; it does not prove optimal on-time completion, backlog-days or cost.",
+    "Earliest receipts after Day 74 are lead-time calculations; post-horizon capacity is not established."
+  ],
+  "input_sha256": {
+    "summary.json": "359923f07ddcecfa110e971621acee34cc676940f7fc6f01acb5a7fe28e2c478",
+    "daily_summary.csv": "9b710d271c53c84ccf4721de97e4d23eca88079fa2027d3d172f982213a67111",
+    "order_results.csv": "bcde6eec611954df705856e51db40591b67db74562d7499b818c5f4383768d83",
+    "inventory_ledger.csv": "e48ed80d3ad69337b70caa06a48a891b99994d7d6cf1a57013352a6feea3ae6b",
+    "capacity_ledger.csv": "ca5eabeedb96f2e07600c7e15abe2a6daf420decb6bf75b4be19265639c1ea79"
+  }
+}

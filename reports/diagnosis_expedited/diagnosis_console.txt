@@ -1,0 +1,69 @@
+STEP 6A - EXPEDITED BACKLOG AUDIT
+DAY | PRODUCED | UNUSED ASSEMBLY | BACKLOG | FEASIBLE WAITING
+61 | 2000 | 0 | 0 | 0
+62 | 2000 | 0 | 0 | 0
+63 | 2000 | 0 | 0 | 0
+64 | 1585 | 415 | 415 | 0
+65 | 2000 | 0 | 415 | 0
+66 | 2000 | 0 | 415 | 0
+67 | 2000 | 0 | 415 | 0
+68 | 2000 | 0 | 415 | 0
+69 | 1795 | 205 | 620 | 0
+70 | 1818 | 182 | 802 | 0
+71 | 2000 | 0 | 802 | 0
+72 | 2000 | 0 | 802 | 0
+73 | 1723 | 277 | 1079 | 0
+74 | 1949 | 51 | 1130 | 0
+
+BATTERY QUANTITY RECONCILIATION
+battery_demand: 3003
+opening_finished_batteries: 52
+existing_finished_batteries: 359
+opening_component_battery_equivalents: 93
+usable_component_battery_equivalents: 1462
+battery_supply_quantity_bound: 1873
+batteries_consumed: 1873
+battery_quantity_shortfall: 1130
+optimistic_car_quantity_bound: 26870
+actual_completed_cars: 26870
+quantity_bound_attained: True
+final_unfulfilled_orders: 1130
+final_unfulfilled_bev_orders: 1130
+unused_assembly_slots_total: 1130
+audit_checks: PASS
+
+BATTERY PRODUCTION AND ARRIVALS
+DAY | MATERIAL BEFORE | PRODUCED/CAPACITY | ASSEMBLY RECEIPTS | ASSEMBLY CLOSING
+61 | 93 | 93/294 | 200 | 200
+62 | 947 | 294/294 | 159 | 66
+63 | 653 | 294/294 | 93 | 0
+64 | 359 | 294/294 | 294 | 0
+65 | 65 | 65/294 | 294 | 0
+66 | 0 | 0/294 | 294 | 52
+67 | 0 | 0/294 | 65 | 0
+68 | 0 | 0/294 | 0 | 0
+69 | 422 | 294/294 | 0 | 0
+70 | 128 | 128/294 | 0 | 0
+71 | 0 | 0/294 | 294 | 0
+72 | 0 | 0/294 | 128 | 0
+73 | 0 | 0/294 | 0 | 0
+74 | 0 | 0/294 | 0 | 0
+
+DAY-END BLOCKERS ON UNDERUSED ASSEMBLY DAYS
+Day 64 | material:zp7:BEV | 415 orders
+Day 69 | material:zp7:BEV | 620 orders
+Day 70 | material:zp7:BEV | 802 orders
+Day 73 | material:zp7:BEV | 1079 orders
+Day 74 | material:zp7:BEV | 1130 orders
+
+EXISTING COMPONENT SHIPMENTS (SCENARIO LEAD TIMES)
+Departure 46 | arrival 62 | equivalents 947 | earliest assembly receipt 64
+Departure 53 | arrival 69 | equivalents 422 | earliest assembly receipt 71
+Departure 60 | arrival 76 | equivalents 424 | earliest assembly receipt 78
+
+Day-end blocker counts may overlap and test orders individually without reserving resources.
+The quantity bound applies only to unchanged opening stock, shipments, lead times and order BOM.
+Attaining this bound establishes horizon volume only; it does not prove optimal on-time completion, backlog-days or cost.
+Earliest receipts after Day 74 are lead-time calculations; post-horizon capacity is not established.
+
+Saved: reports/diagnosis_expedited/

@@ -1,0 +1,19 @@
+{
+  "project": "Automotive Production Planning & Supply Shortage Management",
+  "version": "0.1-data-foundation",
+  "start_period": 61,
+  "end_period": 74,
+  "opening_inventory_period": 60,
+  "time_unit": "day; relative index, not calendar date",
+  "aggregation": "identical direct BOM, demand node and due period; preserve every source order ID",
+  "objective_proposal": ["minimize unfulfilled units at horizon end", "minimize late unit-days", "minimize early unit-days"],
+  "early_production_policy": "proposed: allow within horizon; report earliness, distinguish completion from actual delivery",
+  "missing_inventory_policy": "unresolved: candidate zero for absent allowed node-product pairs; do not apply until model specification",
+  "supplier_schedule_policy": "unresolved: paper uses fixed production; workbook labels max_flow require explicit reconciliation",
+  "missing_supplier_schedule_policy": "unresolved: absent product entries and periods 71-74 are not filled",
+  "costs": "absent; no financial savings or profit objective",
+  "raw_identity_bom": "retain; exclude self-links only from physical component explosion",
+  "transportation_size": "inactive explicit-vehicle dimension; use arc capacities, not zero sizes, for capacity modelling",
+  "scenario_changes": "separate overlays; preserve source",
+  "solver_ready": false
+}

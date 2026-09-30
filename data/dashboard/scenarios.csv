@@ -1,0 +1,4 @@
+﻿scenario_id,scenario_label,source_report_folder,start_day,end_day,component_transit_days,extra_opening_finished_batteries,post_day_70_policy,method,result_type,assumption_note
+baseline,Baseline,baseline_14day,61,74,20,0,demand_driven_within_capacity,earliest_due_date_feasible_heuristic,simulation,Recorded inputs and explicit baseline policies.
+expedited,Expedited transit,scenario_battery_expedited,61,74,16,0,demand_driven_within_capacity,earliest_due_date_feasible_heuristic,simulation,Hypothetical 16-day transit; availability and cost unverified.
+buffer,Expedited + opening battery buffer,buffer_1130_demand_driven_within_capacity,61,74,16,1130,demand_driven_within_capacity,earliest_due_date_feasible_heuristic,simulation,Hypothetical 16-day transit plus 1130 extra finished batteries before Day 61; availability and cost unverified.

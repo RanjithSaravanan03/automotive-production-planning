@@ -1,0 +1,4 @@
+departure_period,component_arrival,battery_equivalents,earliest_assembly_receipt,usable_within_horizon
+46,62,947,64,True
+53,69,422,71,True
+60,76,424,78,False

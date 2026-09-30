@@ -1,0 +1,4 @@
+extra_finished_batteries,produced_units,unfulfilled_units,on_time_units,on_time_pct,backlog_unit_days,feasibility_checks
+0,26870,1130,24819,88.64,7310,PASS
+424,27294,706,26566,94.88,2691,PASS
+1130,28000,0,28000,100.0,0,PASS

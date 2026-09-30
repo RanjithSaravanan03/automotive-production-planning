@@ -1,0 +1,6 @@
+{
+  "identical_tested_metrics": true,
+  "full_on_time_fulfilment_under_both_policies": true,
+  "scope": "14-day horizon, 16-day transit, extra 1130 finished batteries before Day 61; other assumptions unchanged",
+  "commercial_feasibility": "not established"
+}

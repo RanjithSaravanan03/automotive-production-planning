@@ -1,0 +1,12 @@
+starting_node_i,ending_node_j,process_lead_time_l_ij,group_g
+zp7,zp8,0,car
+gear-supplier_inv,zp7,2,gear
+engine-supplier_inv,zp7,1,engine
+gear-supplier_prod,gear-supplier_inv,2,gear
+engine-supplier_prod,engine-supplier_inv,1,engine
+battery-supplier_inv,zp7,1,battery
+seat-supplier_inv,zp7,0,seat
+battery-supplier_prod,battery-supplier_inv,1,battery
+seat-supplier_prod,seat-supplier_inv,0,seat
+seat-supplier_trans,seat-supplier_prod,23,seat_componment
+battery-supplier_trans,battery-supplier_prod,20,battery_componment

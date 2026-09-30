@@ -1,0 +1,28 @@
+{
+  "method": "earliest_due_date_feasible_heuristic",
+  "policy_name": "baseline_v1_fixed_then_flexible",
+  "post_day_70_policy": "demand_driven_within_capacity",
+  "demand_units": 28000,
+  "produced_units": 26870,
+  "unfulfilled_units": 1130,
+  "on_time_units": 24819,
+  "late_completed_units": 2051,
+  "horizon_fulfilment_pct": 95.96,
+  "on_time_pct": 88.64,
+  "backlog_unit_days": 7310,
+  "feasibility_checks": "PASS",
+  "policy_sha256": "b9bf40a05f171033d34d4be7ec1d8ebabf9fc9184ed6cfeb176c2db07005b73f",
+  "limitations": [
+    "Greedy horizon-net replenishment may hold inventory early or postpone useful replenishment when later pipeline exists.",
+    "External input is available on demand only at listed engine/gear source pairs; processing capacity remains binding.",
+    "Seats are produced just in time. Missing stock defaults to zero.",
+    "These are simulated operational results; no cost savings, actual delivery or optimality claim.",
+    "Hypothetical 16-day component transit applied to existing shipments; no new upstream departures.",
+    "Hypothetical additional 0 finished BEV batteries at assembly before Day 61.",
+    "Source, pre-horizon production/transport capacity, procurement cost and carrying cost of extra stock are not established.",
+    "This buffer is additional supply; it is not a simulation of expediting the Day-60 component shipment.",
+    "The existing heuristic is reused. No optimal service or economic safety-stock claim."
+  ],
+  "scenario_name": "scenario_battery_buffer_0",
+  "extra_finished_batteries_at_zp7_before_day_61": 0
+}

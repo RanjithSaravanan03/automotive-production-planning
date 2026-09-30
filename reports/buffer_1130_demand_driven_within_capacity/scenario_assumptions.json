@@ -1,0 +1,13 @@
+{
+  "component_transit_days": 16,
+  "extra_finished_batteries": 1130,
+  "original_opening_stock": 52,
+  "scenario_opening_stock": 1182,
+  "buffer_node": "zp7",
+  "buffer_available": "before Day 61",
+  "post_day_70_policy": "demand_driven_within_capacity",
+  "new_upstream_departures": 0,
+  "existing_shipment_quantities_and_departures": "unchanged",
+  "production_and_transport_capacities": "unchanged",
+  "commercial_and_pre_horizon_feasibility": "not established"
+}

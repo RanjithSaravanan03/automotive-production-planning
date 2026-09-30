@@ -1,0 +1,3 @@
+post_day_70_policy,produced_units,unfulfilled_units,on_time_units,on_time_pct,backlog_unit_days,feasibility_checks
+demand_driven_within_capacity,28000,0,28000,100.0,0,PASS
+no_unscheduled_production,28000,0,28000,100.0,0,PASS

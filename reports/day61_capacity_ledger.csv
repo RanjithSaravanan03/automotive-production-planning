@@ -1,0 +1,4 @@
+period,from_node,to_node,available_capacity,used_capacity,remaining_capacity,utilization_pct
+61,zp7,zp8,2000,2000,0,100.0
+61,seat-supplier_prod,seat-supplier_inv,2100,2000,100,95.24
+61,seat-supplier_inv,zp7,2100,2000,100,95.24

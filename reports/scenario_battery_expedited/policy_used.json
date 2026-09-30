@@ -1,0 +1,46 @@
+{
+  "policy_name": "baseline_v1_fixed_then_flexible",
+  "policy_status": "explicit_project_assumptions",
+  "start_period": 61,
+  "end_period": 74,
+  "opening_inventory_period": 60,
+  "supplier_production": {
+    "scheduled_groups": [
+      "engine",
+      "gear"
+    ],
+    "fixed_schedule_start": 61,
+    "fixed_schedule_end": 70,
+    "recorded_quantity_treatment": "fixed",
+    "missing_product_on_fixed_day": "zero_scheduled_production",
+    "after_fixed_schedule": "demand_driven_within_capacity",
+    "require_permitted_inputs": true,
+    "respect_production_and_transport_lead_times": true,
+    "avoid_new_production_unusable_within_horizon": true
+  },
+  "inventory": {
+    "missing_opening_record": "assume_zero",
+    "opening_balance_interpretation": "state_before_day_61",
+    "receive_arrivals_before_daily_allocation": true,
+    "allow_negative_stock": false
+  },
+  "flows": {
+    "preserve_existing_flows": true,
+    "arrival_rule": "start_period_plus_lead_time",
+    "consume_inputs_at_process_start": true,
+    "allow_same_day_zero_lead_time_flow": true
+  },
+  "orders": {
+    "priority": [
+      "due_period",
+      "order_product_id"
+    ],
+    "allow_early_car_production": false,
+    "carry_unfinished_orders_forward": true,
+    "skip_temporarily_infeasible_orders": true
+  },
+  "comparison": {
+    "use_same_constraints_for_baseline_and_optimizer": true,
+    "required_sensitivity": "no_unscheduled_engine_or_gear_production_after_day_70"
+  }
+}
